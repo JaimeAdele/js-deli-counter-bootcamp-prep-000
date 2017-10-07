@@ -22,6 +22,9 @@ function currentLine(katzDeliLine){
     let peopleInLine = 'The line is currently:';
     for (var i = 0; i < katzDeliLine.length; i++){
       peopleInLine += ' ' + (i + 1) + '. ' + katzDeliLine[i];
+      if (i + 1 < katzDeliLine.length){
+        peopleInLine += ',';
+      }
     }
     return peopleInLine;
   }
