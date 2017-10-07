@@ -14,3 +14,15 @@ function nowServing(katzDeliLine){
     return `Currently serving ${nextPerson}.`;
   }
 }
+
+function currentLine(katzDeliLine){
+  if (katzDeliLine === 0){
+    return 'The line is currently empty.';
+  } else {
+    let peopleInLine = 'The line is currently: ';
+    for (var i = 0; i < katzDeliLine.length; i++){
+      peopleInLine += i + 1 + '. ' + katzDeliLine[i];
+    }
+    return peopleInLine;
+  }
+}
